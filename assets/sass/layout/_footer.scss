@@ -1,0 +1,136 @@
+footer {
+  background-color: $text-color1;
+  padding: 6.4rem 0 0;
+  .footer__content {
+    margin: 0 3.2rem;
+    .footer__content__item {
+      .footer__content__item__heading {
+        margin-bottom: 1.6rem;
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: $text-color4;
+        text-transform: uppercase;
+      }
+      .footer__content__item__list {
+        .footer__content__item__list__item {
+          margin-bottom: 1.6rem;
+          line-height: 1.8rem;
+
+          a {
+            color: $text-color2;
+            font-size: 1.4rem;
+
+            &:hover {
+              color: $text-color4;
+              text-decoration: underline;
+            }
+          }
+        }
+        .footer__content__item__list__item:last-child {
+          margin-bottom: 0;
+        }
+      }
+      .footer__content__item__social {
+        @include flex-box;
+        justify-content: start;
+        padding-bottom: 2.4rem;
+        .footer__content__item__social__item {
+          padding-right: 2rem;
+          svg {
+            width: 2.4rem;
+            path {
+              fill: #d0d0d0;
+            }
+          }
+
+          &:hover {
+            svg {
+              path {
+                fill: $text-color4;
+              }
+            }
+          }
+        }
+      }
+
+      #send_email {
+        @include flex-box;
+        justify-content: space-between;
+        width: 100%;
+
+        position: relative;
+        #email {
+          padding: 8px 1.6rem;
+          border: none;
+          outline: none;
+          border: 1px solid #eee;
+          border-radius: 10px;
+          background-color: transparent;
+          width: 100%;
+
+          &::placeholder {
+            color: #bcbcbc;
+            font-size: 1.5rem;
+          }
+          &:focus-visible {
+            outline: 3.5px solid #ff690080;
+          }
+        }
+
+        button {
+          position: absolute;
+          right: 0;
+          top: 0;
+          padding: 8px 1.6rem;
+          border: none;
+          outline: none;
+          background-color: transparent;
+          color: $text-color4;
+
+          &:hover {
+            color: #bcbcbc;
+          }
+        }
+      }
+    }
+  }
+  .footer__copy-right {
+    @include flex-box;
+    justify-content: space-between;
+    gap: 3rem;
+    margin: 4.8rem 3.2rem 0;
+    border-top: 1px solid #898989;
+    padding: 2.2rem 0 3.8rem;
+
+    .footer__copy-right__text {
+      color: $text-color4;
+      font-size: 1.4rem;
+      margin: 0;
+    }
+
+    .footer__copy-right__box {
+      @include flex-box;
+      justify-content: space-between;
+      flex: 1;
+      a {
+        color: $text-color4;
+        font-size: 1.4rem;
+
+        &:hover {
+          color: $text-color4;
+          text-decoration: underline;
+        }
+
+        svg {
+          margin-left: 1.6rem;
+          width: 2.4rem;
+          height: 2.4rem;
+
+          path {
+            fill: $text-color4;
+          }
+        }
+      }
+    }
+  }
+}
