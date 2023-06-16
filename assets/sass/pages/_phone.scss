@@ -1,9 +1,8 @@
 #phone {
+  background-color: #f7f7f7;
   .header__navbar__link[href="#phone"] {
     color: $text-color3 !important;
   }
-
-  background-color: #f7f7f7;
   .phone__heading {
     height: 16rem;
     @include flex-box;
@@ -78,4 +77,6 @@
       }
     }
   }
+
+  
 }

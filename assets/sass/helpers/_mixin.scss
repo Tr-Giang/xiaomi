@@ -24,6 +24,7 @@
 .hide-height {
   height: 0;
 }
+
 .show-height {
   height: max-content !important;
 }
@@ -32,4 +33,11 @@
   display: block !important;
   transform: translateX(0) !important;
   opacity: 1 !important;
+}
+
+#phone,
+#xiaomi,
+#redmi,
+#poco {
+  scroll-margin-top: 4.8rem;
 }
