@@ -1,0 +1,81 @@
+#phone {
+  .header__navbar__link[href="#phone"] {
+    color: $text-color3 !important;
+  }
+
+  background-color: #f7f7f7;
+  .phone__heading {
+    height: 16rem;
+    @include flex-box;
+    flex-direction: column;
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
+  .product {
+    background-color: transparent;
+    .product__item {
+      @include flex-box;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 41rem;
+      padding: 2rem 0;
+      background-color: #fff;
+      cursor: pointer;
+      .product__item__content {
+        position: relative;
+        padding: 0 5px;
+      }
+      .product__item__header {
+        font-size: 2.2rem;
+      }
+      .product__item__desc {
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+      .product__item__btn {
+        font-size: 1rem;
+      }
+      .product__item__img {
+        width: 16rem;
+        height: 16rem;
+      }
+    }
+
+    .product__other {
+      justify-content: center;
+
+      h3 {
+        font-size: 2.2rem;
+      }
+      a {
+        @include flex-box;
+        width: 2.8rem;
+        height: 2.8rem;
+        padding: 4px;
+        border: 3px solid $text-color3;
+        border-radius: 1rem;
+        color: $text-color3;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  .redmi {
+    .banner__item__content {
+      h2 {
+        font-size: 4rem;
+        font-weight: normal;
+        color: $text-color1;
+      }
+      span {
+        color: #e50012;
+        font-size: 4rem;
+      }
+    }
+  }
+}

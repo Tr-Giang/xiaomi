@@ -31,21 +31,23 @@ const app = (() => {
                 else headerBtn.style.right = '2rem';
             };
 
-            headerOpenSubs.forEach(headerOpenSub => {
-                headerOpenSub.firstElementChild.onclick = (e) => {
-                    e.preventDefault();
-                    headerOpenSub.querySelector('div .fa-plus').classList.toggle('display-none');
-                    headerOpenSub.querySelector('div .fa-minus').classList.toggle('display-none');
+            if (window.innerWidth <= 768) {
+                headerOpenSubs.forEach(headerOpenSub => {
+                    headerOpenSub.firstElementChild.onclick = (e) => {
+                        e.preventDefault();
+                        headerOpenSub.querySelector('div .fa-plus').classList.toggle('display-none');
+                        headerOpenSub.querySelector('div .fa-minus').classList.toggle('display-none');
 
 
-                    if (headerOpenSub.querySelector('div .fa-plus').classList.contains('display-none')) { headerOpenSub.lastElementChild.style.height = `${headerOpenSub.firstElementChild.nextElementSibling.firstElementChild.clientHeight}px`; }
-                    else { headerOpenSub.lastElementChild.style.height = '0'; }
+                        if (headerOpenSub.querySelector('div .fa-plus').classList.contains('display-none')) { headerOpenSub.lastElementChild.style.height = `${headerOpenSub.firstElementChild.nextElementSibling.firstElementChild.clientHeight}px`; }
+                        else { headerOpenSub.lastElementChild.style.height = '0'; }
 
-                    console.log(headerOpenSub.firstElementChild.nextElementSibling.firstElementChild.clientHeight);
-                    console.log(headerOpenSub.firstElementChild.nextElementSibling.firstElementChild);
-                };
+                        console.log(headerOpenSub.firstElementChild.nextElementSibling.firstElementChild.clientHeight);
+                        console.log(headerOpenSub.firstElementChild.nextElementSibling.firstElementChild);
+                    };
 
-            });
+                });
+            }
 
         },
 

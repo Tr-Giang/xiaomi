@@ -12,11 +12,19 @@
 .xiaomi__btn--light {
   background-color: $text-color4;
   color: $text-color1;
+
+  &:hover {
+    color: $text-color1;
+  }
 }
 
 .xiaomi__btn--dark {
   background-color: $text-color1;
   color: $text-color4;
+
+  &:hover {
+    color: $text-color4;
+  }
 }
 
 .xiaomi__btn__noboder {
