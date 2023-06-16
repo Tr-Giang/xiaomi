@@ -16,3 +16,20 @@
 .display-none {
   display: none;
 }
+
+.dblock {
+  display: block !important;
+}
+
+.hide-height {
+  height: 0;
+}
+.show-height {
+  height: max-content !important;
+}
+
+.show {
+  display: block !important;
+  transform: translateX(0) !important;
+  opacity: 1 !important;
+}

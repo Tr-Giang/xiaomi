@@ -1,7 +1,8 @@
 .xiaomi__btn {
-  padding: 5px 2rem;
+  padding: 0.8rem 2rem;
   border: none;
-  border-radius: 1.2rem;
+  border-radius: 1rem;
+  font-size: 1.2rem;
 
   &:hover {
     opacity: 0.8;
@@ -16,4 +17,17 @@
 .xiaomi__btn--dark {
   background-color: $text-color1;
   color: $text-color4;
+}
+
+.xiaomi__btn__noboder {
+  margin-top: 6px;
+  border: none;
+  background-color: transparent;
+  color: $text-color3;
+  font-size: 1.4rem;
+
+  &:hover {
+    text-decoration: underline;
+    color: $text-color3;
+  }
 }

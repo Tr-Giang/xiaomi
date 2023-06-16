@@ -1,5 +1,6 @@
 main {
   background-color: #f7f7f7;
+  margin-top: $header-height;
 }
 
 .banner {
@@ -14,7 +15,7 @@ main {
     .banner__item__content {
       position: absolute;
       top: 50%;
-      left: 15rem;
+      left: 10%;
       transform: translateY(-50%);
 
       h2 {
@@ -69,17 +70,6 @@ main {
     .product__item__img {
     }
 
-    button {
-      margin-top: 6px;
-      border: none;
-      background-color: transparent;
-      color: $text-color3;
-      font-size: 1.4rem;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
     img {
       object-fit: cover;
       object-position: bottom;
@@ -88,6 +78,79 @@ main {
 
     &:hover {
       box-shadow: 0 0.3125vw 0.72917vw 0 #00000014;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    .banner__item {
+      .banner__item__content {
+        top: 0;
+        left: 50%;
+        width: max-content;
+        transform: translateX(-50%);
+        padding: 4rem 1rem;
+        text-align: center;
+
+        h2 {
+          font-size: 3.2rem;
+          font-weight: 400;
+          span {
+            font-size: 2.8rem;
+          }
+        }
+
+        h3 {
+          font-size: 1.6rem;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .product {
+    padding: 0;
+    .product__item {
+      .product__item__content {
+      }
+      .product__item__header {
+        font-size: 2.2rem;
+        text-align: center;
+        span {
+          color: #e50012;
+        }
+      }
+
+      .product__item__desc {
+        margin: 0;
+        font-size: 1.6rem;
+        text-align: center;
+      }
+
+      .product__item__img {
+      }
+
+      button {
+        margin-top: 6px;
+        border: none;
+        background-color: transparent;
+        color: $text-color3;
+        font-size: 1.4rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      img {
+        object-fit: cover;
+        object-position: bottom;
+        height: 100%;
+      }
+
+      &:hover {
+        box-shadow: 0 0.3125vw 0.72917vw 0 #00000014;
+      }
     }
   }
 }
