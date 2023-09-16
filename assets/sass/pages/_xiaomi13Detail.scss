@@ -1,0 +1,193 @@
+#xiaomi13 {
+  .header-content {
+    padding: 2rem 3rem;
+
+    .header-content__item {
+      padding: 0 1.5rem;
+
+      a {
+        color: $text-color2;
+      }
+
+      b {
+        color: $text-color1;
+        &:hover {
+          color: $text-color3;
+        }
+      }
+
+      button {
+        padding: 0.4rem 1rem;
+        font-size: 1.5rem;
+      }
+    }
+
+    .header-content__left {
+      .header-content__item + .header-content__item {
+        border-left: 1.5px solid #ccc;
+
+        a {
+          font-size: 1.4rem;
+        }
+      }
+      h2 {
+        font-size: 2.5rem;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .banner {
+    height: 70rem;
+    padding-bottom: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    background-image: url("../images/xiaomi_13_series/54d5746eecd5594b8c5f7e8d55e684be.webp");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    h1 {
+      font-size: 5.6rem;
+      font-weight: 600;
+    }
+
+    img {
+      width: 25rem;
+      transform: translateX(8rem);
+    }
+
+    h2 {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+  }
+
+  .content {
+    .content__overview {
+      .content__overview__img {
+        height: 90rem;
+        display: flex;
+        justify-content: center;
+        padding-top: 16rem;
+        background-image: url("../images/xiaomi_13_series/img17.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+
+        h3 {
+          width: 70rem;
+          color: $text-color4;
+          font-size: 3rem;
+          font-weight: 600;
+        }
+      }
+      .content__overview__video {
+        width: 100vw;
+        video {
+          width: 100%;
+        }
+      }
+    }
+
+    .content__design {
+      .content__design__detail--layout1 {
+        background-image: url("../images/xiaomi_13_series/img03.jpg");
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .content__design__detail--layout2 {
+        background-image: url("../images/xiaomi_13_series/img02.webp");
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .content__design__detail--layout3 {
+        height: 69rem !important;
+        justify-content: end;
+        background-image: url("../images/xiaomi_13_series/img04.webp");
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+
+    .content__camera {
+      background-color: #000;
+      h2,
+      h3,
+      p,
+      span {
+        color: #fff !important;
+      }
+      .content__camera__logo {
+        img {
+          width: 25rem;
+          transform: translateX(8rem);
+        }
+      }
+    }
+
+    .content__global {
+      padding: 15rem 0 0;
+      .content__global__detail {
+        height: 53.5rem;
+        display: flex;
+        align-items: center;
+
+        .content__global__detail__box {
+          width: 40rem;
+
+          .content__global__detail__header {
+            font-size: 3.2rem;
+            font-weight: 200;
+          }
+
+          .content__global__detail__title {
+            display: block;
+            padding: 2rem 0;
+            font-size: 3.2rem;
+            font-weight: 600;
+          }
+
+          .content__global__detail__desc {
+            font-size: 1.3rem;
+            color: $text-color2;
+          }
+        }
+      }
+    }
+
+    .content__title {
+      display: inline-block;
+      padding: 0.5rem 2rem;
+      color: $text-color3;
+      border: 2px solid $text-color3;
+      border-radius: 99px;
+    }
+
+    .content__hightlight {
+      font-size: 8.8rem;
+      font-weight: 600;
+      width: 60rem;
+    }
+
+    .content__hightlight--light {
+      color: $text-color1;
+    }
+    .content__hightlight--dark {
+      color: #fff;
+    }
+  }
+
+  .margin-left {
+    margin-left: 26rem;
+  }
+  .margin-right {
+    margin-right: 15rem;
+  }
+}
